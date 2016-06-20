@@ -17,3 +17,30 @@ body{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
+
+.items{
+	float: left;
+	width: 15%;
+	margin:1%;
+	min-height: 330px;
+	height: 330px;
+}
+
+
+#items_img
+{
+	width: 80%;
+}
+
+#home{
+	width: 1600px;
+	background-color: white;
+	padding-bottom: 15px;
+	padding-top: 0px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.bas{
+	position: relative;
+}

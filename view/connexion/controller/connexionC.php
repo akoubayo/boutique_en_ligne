@@ -11,8 +11,13 @@ if(isset($_POST['pseudo']) && isset($_POST['pass']))
 		{
 			$_SESSION['pseudo'] = $donnee['pseudo'];
 			$_SESSION['mail'] = $donnee['mail'];
+			$_SESSION['admin'] = intval($donnee['admin']);
 			header('Location:index.php');
 		}
 	}
+}
+if(!isset($_SESSION['pseudo']))
+{
+			header("Location: index.php?error=no");	
 }
 ?>

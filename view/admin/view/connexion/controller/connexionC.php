@@ -22,8 +22,12 @@ if(isset($_POST['nom']) && isset($_POST['pass']))
 		}
 		if (isset($_SESSION['admin']) && $_SESSION['admin'] === 1)
 			header("Location: index.php?p=admin");
+		if(!isset($_SESSION['pseudo']))
+		{
+			header("Location: index.php?error=no");
+		}
 		else
 			$exist = 0;
+	}	
 	}
-}
 ?>
