@@ -3,7 +3,7 @@ $aa = 0;
 if(isset($_POST["id_i"]) && isset($_POST["titre"]) && isset($_POST["desc"]) && isset($_POST["id_p"]))
 {
 	$post = postVerif($_POST);
-	$prix = $post[prix];
+	$prix = $post['prix'];
 	$req = "UPDATE items SET nom_items = '$post[titre]' , desc_items = '$post[desc]', prix_items = $prix WHERE id_items = '$post[id_i]'";
 	mysqli_query($db, $req);
 	if(isset($_FILES['pics']) && !empty($_FILES['pics']['name']))

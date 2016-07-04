@@ -71,7 +71,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] === 1)
 				<span>
 					<img src="./webroot/img/icone/add.png"/>
 					<br />
-					Voire les commandes.
+					Voir les commandes.
 				</span>
 			</a>
 		</div>

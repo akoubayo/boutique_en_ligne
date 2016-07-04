@@ -4,7 +4,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] === 1)
 	?>
 	<div id="content">
 		<div id="div-icone">
-			<a href="index.php?p=admin&l=add">
+				<a href="index.php?p=admin&l=add">
 				<span>
 					<img src="./webroot/img/icone/add.png"/>
 					<br />
@@ -53,6 +53,13 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] === 1)
 				Ajouter un utilisateur
 			</span>
 				</a>
+				<a href="index.php?p=admin&l=mod_u">
+			<span>
+				<img src="./webroot/img/icone/add.png"/>
+				<br />
+				Modifer un utilisateur
+			</span>
+			</a>
 				<a href="index.php?p=admin&l=del_u">
 			<span>
 				<img src="./webroot/img/icone/del.png"/>
@@ -60,12 +67,11 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] === 1)
 				Supprimer un utilisateur
 			</span>
 			</a>
-		</a>
 			<a href="index.php?p=admin&l=commande">
 				<span>
 					<img src="./webroot/img/icone/add.png"/>
 					<br />
-					Voire les commandes.
+					Voir les commandes.
 				</span>
 			</a>
 		</div>

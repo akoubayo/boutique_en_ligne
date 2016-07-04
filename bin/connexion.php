@@ -25,8 +25,7 @@ if($db = mysqli_connect('localhost', 'root','root'))
 	else
 	{
 		$db = mysqli_connect('localhost', 'root','root','boutique');
-		$req = "ALTER DATABASE boutique DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;";
-		mysqli_query($db, $req);
+		mysqli_set_charset($db, "utf8");
 	}
 }
 else // Mais si elle rate…

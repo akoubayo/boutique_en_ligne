@@ -1,4 +1,8 @@
 <?php
+$pseudo = 0;
+$pass = 0;
+$mail = 0;
+$exist = 0;
 if(isset($_POST['nom']) && isset($_POST['pass']) && isset($_POST['mail']))
 {
 	if(empty($_POST['nom']))

@@ -9,6 +9,7 @@ if (isset($_POST['nom']) && isset($_POST['desc']) && isset($_FILES['pics']))
 		foreach ($_POST as $key => $value) {
 			if('cat' == substr($key, 0, 3))
 				$test = 1;
+			//echo $key. " === ".substr($key, 0, 3)." ==== ".substr($key, 0, -1). "<br/>";
 		}
 		if($test === 0)
 		{
@@ -41,7 +42,7 @@ if (isset($_POST['nom']) && isset($_POST['desc']) && isset($_FILES['pics']))
 			$req = "INSERT INTO pics (nom_pics,title, alt, items_id) VALUES ('$name.$ext', '', '', $don[id_items])";
 			$ress = mysqli_query($db, $req);
 			foreach ($post as $k => $v) {
-			if(substr($k,0, -1) == 'cat')
+			if(substr($k,0, 3) == 'cat')
 			{
 				$req = "INSERT INTO cat_items (cat_id, items_id) VALUES ($v, $don[id_items])";
 				mysqli_query($db, $req);

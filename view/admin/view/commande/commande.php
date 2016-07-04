@@ -13,7 +13,7 @@ while($d = mysqli_fetch_assoc($ask))
 $i = 0;
 if(isset($co))
 {
-	while ($co[$i]) {
+	while ($i < count($co)) {
 	
 	
 ?>
